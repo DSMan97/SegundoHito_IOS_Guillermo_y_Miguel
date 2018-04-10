@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     @IBAction func eventoClickLogin(){
         //Codigo de acceso en el login y sus distintos casos
        if txtUser?.text == "miguel" && txtPass?.text == "12345"{
