@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="-1415" y="-72"/>
         </scene>
-        <!--View Controller-->
+        <!--Register-->
         <scene sceneID="sVL-pd-aq1">
             <objects>
-                <viewController id="Kwi-vB-8M8" sceneMemberID="viewController">
+                <viewController id="Kwi-vB-8M8" customClass="VCRegister" customModule="TrabajoFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G78-nH-e8Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +101,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Accept"/>
                                 <connections>
+                                    <action selector="clickRegistar" destination="Kwi-vB-8M8" eventType="touchUpInside" id="Ayj-Xp-Oim"/>
                                     <segue destination="qY6-IB-db3" kind="show" id="41u-8G-Y5y"/>
                                 </connections>
                             </button>
@@ -172,6 +173,13 @@
                         <color key="backgroundColor" red="0.48387530464173822" green="1" blue="0.99531444186184259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JDs-WR-acb"/>
                     </view>
+                    <connections>
+                        <outlet property="btnRegister" destination="YBa-b7-0Cv" id="irW-Ma-GRV"/>
+                        <outlet property="txtEmail" destination="knO-TA-c0g" id="ePO-4M-uaW"/>
+                        <outlet property="txtPass" destination="tWe-Pj-2wB" id="ajC-7i-5VB"/>
+                        <outlet property="txtPassConfirm" destination="gCG-Ip-MFn" id="Gn3-Hu-rCz"/>
+                        <outlet property="txtUser" destination="GgV-kX-LNg" id="2JM-az-Ul9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMQ-Uz-ReY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

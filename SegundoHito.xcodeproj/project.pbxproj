@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074E8B4C207F595700639D63 /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E8B4B207F595700639D63 /* VCRegister.swift */; };
 		079A13B5207CE1A600105B9D /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A13B4207CE1A600105B9D /* DataHolder.swift */; };
 		07F76B9F207CDBD700408656 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07F76B9E207CDBD600408656 /* GoogleService-Info.plist */; };
 		1A0EA6592076476B00AA5994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EA6582076476B00AA5994 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		074E8B4B207F595700639D63 /* VCRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRegister.swift; sourceTree = "<group>"; };
 		079A13B4207CE1A600105B9D /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		07F76B9E207CDBD600408656 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		08BEEADA109F6F4A8708C405 /* Pods-TrabajoFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrabajoFinal/Pods-TrabajoFinal.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				1A0EA673207681FF00AA5994 /* TVCMiCelda.swift */,
 				1A6BF6EB20769B62003C8626 /* CVCMicelda2.swift */,
 				079A13B4207CE1A600105B9D /* DataHolder.swift */,
+				074E8B4B207F595700639D63 /* VCRegister.swift */,
 			);
 			path = TrabajoFinal;
 			sourceTree = "<group>";
@@ -227,14 +230,28 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TrabajoFinal/Pods-TrabajoFinal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +291,7 @@
 				1A0EA67220767A6900AA5994 /* VCPrincipal.swift in Sources */,
 				1A0EA65B2076476B00AA5994 /* ViewController.swift in Sources */,
 				1A0EA6592076476B00AA5994 /* AppDelegate.swift in Sources */,
+				074E8B4C207F595700639D63 /* VCRegister.swift in Sources */,
 				1A6BF6EC20769B62003C8626 /* CVCMicelda2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
