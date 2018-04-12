@@ -29,15 +29,23 @@ class VCRegister: UIViewController {
         // Dispose of any resources that can be recreated.
     }
    @IBAction func clickRegistar(){
-        Auth.auth().createUser(withEmail:(txtEmail?.text)!,password:(txtPass?.text)!){ (user, error) in
+    //esto es de prueba y debe ser cambiado
+        DataHolder.sharedInstance.miPerfil.sNombre = "Yony"
+        DataHolder.sharedInstance.miPerfil.sApellidos = "BM"
+        DataHolder.sharedInstance.miPerfil.iFecha = 1545
+        DataHolder.sharedInstance.miPerfil.iAltura = 184
+    Auth.auth().createUser(withEmail:(txtEmail?.text)!,password:(txtPass?.text)!){ (user, error) in
             if user != nil{
                 print("TE REGISTRARSE")
-                DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData([
-                    "nombre": self.txtUser?.text! as Any,
+                DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(
+                    DataHolder.sharedInstance.miPerfil.getMap()
+                   /*[
+                     "nombre": self.txtUser?.text! as Any,
                     "email": self.txtEmail?.text as Any,
                     "contrasena": self.txtPass?.text as Any
-                    
-                    ])
+                     ]
+                    */
+                    )
             }
             else{
                 print(error!)

@@ -26,6 +26,7 @@
 		1A6BF6F420769F81003C8626 /* perro.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6BF6EF20769F80003C8626 /* perro.png */; };
 		1A6BF6F520769F81003C8626 /* canario.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6BF6F020769F80003C8626 /* canario.png */; };
 		1A6BF6F620769F81003C8626 /* gato.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6BF6F120769F80003C8626 /* gato.png */; };
+		1A8DB4F6207F86B2004603A4 /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8DB4F5207F86B2004603A4 /* Perfil.swift */; };
 		35638A1F34E07D60E5B7FECC /* Pods_TrabajoFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCC4811A40CB4114A9EA5FF /* Pods_TrabajoFinal.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		1A6BF6EF20769F80003C8626 /* perro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perro.png; sourceTree = "<group>"; };
 		1A6BF6F020769F80003C8626 /* canario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canario.png; sourceTree = "<group>"; };
 		1A6BF6F120769F80003C8626 /* gato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gato.png; sourceTree = "<group>"; };
+		1A8DB4F5207F86B2004603A4 /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		DBCC4811A40CB4114A9EA5FF /* Pods_TrabajoFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrabajoFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				1A6BF6EB20769B62003C8626 /* CVCMicelda2.swift */,
 				079A13B4207CE1A600105B9D /* DataHolder.swift */,
 				074E8B4B207F595700639D63 /* VCRegister.swift */,
+				1A8DB4F5207F86B2004603A4 /* Perfil.swift */,
 			);
 			path = TrabajoFinal;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				1A0EA6612076476B00AA5994 /* TrabajoFinal.xcdatamodeld in Sources */,
 				079A13B5207CE1A600105B9D /* DataHolder.swift in Sources */,
 				1A0EA67220767A6900AA5994 /* VCPrincipal.swift in Sources */,
+				1A8DB4F6207F86B2004603A4 /* Perfil.swift in Sources */,
 				1A0EA65B2076476B00AA5994 /* ViewController.swift in Sources */,
 				1A0EA6592076476B00AA5994 /* AppDelegate.swift in Sources */,
 				074E8B4C207F595700639D63 /* VCRegister.swift in Sources */,

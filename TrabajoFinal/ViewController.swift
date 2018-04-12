@@ -40,7 +40,8 @@ class ViewController: UIViewController {
                 DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!)
                 ruta?.getDocument{ (document, error) in
                     if document != nil{
-                        print(document?.data())
+                        DataHolder.sharedInstance.miPerfil.setMap(valores: (document?.data())!)
+                       // print(document?.data())
                         self.performSegue(withIdentifier: "trlogin", sender: self)
                     }
                     else{
