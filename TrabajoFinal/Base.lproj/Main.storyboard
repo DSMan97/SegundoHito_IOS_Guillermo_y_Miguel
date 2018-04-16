@@ -81,7 +81,7 @@
                     <connections>
                         <outlet property="txtPass" destination="Duq-p8-bgO" id="ibB-bJ-HOR"/>
                         <outlet property="txtUser" destination="jN5-Ss-s9C" id="WPn-Rf-enD"/>
-                        <segue destination="qY6-IB-db3" kind="show" identifier="SaltoInicio" id="3nN-Qr-oIz"/>
+                        <segue destination="qY6-IB-db3" kind="show" identifier="trlogin" id="3nN-Qr-oIz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -353,6 +353,6 @@
         <image name="eliminar-pis-de-gato.jpg" width="740" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="41u-8G-Y5y"/>
+        <segue reference="3nN-Qr-oIz"/>
     </inferredMetricsTieBreakers>
 </document>

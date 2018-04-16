@@ -36,12 +36,14 @@ class ViewController: UIViewController {
         Auth.auth().signIn(withEmail: (txtUser?.text)!, password:
         (txtPass?.text)!) {(user, error) in
             if user != nil{
+               // print("ENTRO")
                 let ruta =
                 DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!)
                 ruta?.getDocument{ (document, error) in
                     if document != nil{
+                        print("ENTRO")
                         DataHolder.sharedInstance.miPerfil.setMap(valores: (document?.data())!)
-                       // print(document?.data())
+                        print(document?.data() as Any)
                         self.performSegue(withIdentifier: "trlogin", sender: self)
                     }
                     else{
@@ -55,17 +57,18 @@ class ViewController: UIViewController {
                 print(error!)
             }
         }
-        Auth.auth().addStateDidChangeListener { (auth, user) in
+        //Auth.auth().addStateDidChangeListener { (auth, user) in
          
-            self.performSegue(withIdentifier: "trlogin", sender: self)
-        }
+            //self.performSegue(withIdentifier: "trlogin", sender: self)
+        //}
         
         
         
         
         
         //Codigo de acceso en el login y sus distintos casos
-       if txtUser?.text == "miguel" && txtPass?.text == "12345"{
+       /*
+        if txtUser?.text == "miguel" && txtPass?.text == "12345"{
             self.performSegue(withIdentifier: "SaltoInicio", sender: self)
         }else
         if txtUser?.text == "guille" && txtPass?.text == "54321"{
@@ -77,6 +80,7 @@ class ViewController: UIViewController {
             if txtUser?.text == "laura" && txtPass?.text == "jajaxd"{
             self.performSegue(withIdentifier: "SaltoInicio", sender: self)
         }
+ */
         
     }
     

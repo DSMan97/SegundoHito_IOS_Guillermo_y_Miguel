@@ -30,10 +30,9 @@ class VCRegister: UIViewController {
     }
    @IBAction func clickRegistar(){
     //esto es de prueba y debe ser cambiado
-        DataHolder.sharedInstance.miPerfil.sNombre = "Yony"
-        DataHolder.sharedInstance.miPerfil.sApellidos = "BM"
-        DataHolder.sharedInstance.miPerfil.iFecha = 1545
-        DataHolder.sharedInstance.miPerfil.iAltura = 184
+        DataHolder.sharedInstance.miPerfil.sNombre = txtUser?.text
+        DataHolder.sharedInstance.miPerfil.sEmail = txtEmail?.text
+    
     Auth.auth().createUser(withEmail:(txtEmail?.text)!,password:(txtPass?.text)!){ (user, error) in
             if user != nil{
                 print("TE REGISTRARSE")
