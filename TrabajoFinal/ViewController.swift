@@ -15,14 +15,18 @@ class ViewController: UIViewController {
     @IBOutlet var txtUser:UITextField?
     @IBOutlet var txtPass:UITextField?
     @IBOutlet var btnLogin:UIButton?
+    @IBOutlet var btnRegister:UIButton?
     
-    
+   
     
     override func viewDidLoad() {
+        btnLogin?.layer.cornerRadius = 10
+        btnRegister?.layer.cornerRadius = 10
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        txtUser?.text = DataHolder.sharedInstance.sNick
-        txtPass?.text=DataHolder.sharedInstance.sNick
+         DataHolder.sharedInstance.miPerfil.sNombre = txtUser?.text
+         DataHolder.sharedInstance.miPerfil.sNombre = txtPass?.text
+        
         
           }
 
@@ -63,24 +67,6 @@ class ViewController: UIViewController {
         //}
         
         
-        
-        
-        
-        //Codigo de acceso en el login y sus distintos casos
-       /*
-        if txtUser?.text == "miguel" && txtPass?.text == "12345"{
-            self.performSegue(withIdentifier: "SaltoInicio", sender: self)
-        }else
-        if txtUser?.text == "guille" && txtPass?.text == "54321"{
-            self.performSegue(withIdentifier: "SaltoInicio", sender: self)
-        }else
-            if txtUser?.text == "yoni" && txtPass?.text == "nose123"{
-            self.performSegue(withIdentifier: "SaltoInicio", sender: self)
-        }else
-            if txtUser?.text == "laura" && txtPass?.text == "jajaxd"{
-            self.performSegue(withIdentifier: "SaltoInicio", sender: self)
-        }
- */
         
     }
     

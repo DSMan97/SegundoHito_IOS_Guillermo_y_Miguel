@@ -11,9 +11,9 @@ import Firebase
 class DataHolder: NSObject {
     static let sharedInstance:DataHolder = DataHolder()
     var fireStoreDB:Firestore?
-    var miPerfil: Perfil=Perfil()
+    var miPerfil:Perfil=Perfil()
     
-    var sNick:String="Guille"
+  
     func initFireBase(){
         FirebaseApp.configure()
         fireStoreDB=Firestore.firestore()

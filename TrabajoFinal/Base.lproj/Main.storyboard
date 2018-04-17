@@ -19,17 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeY-xf-wqo">
-                                <rect key="frame" x="63" y="491" width="38" height="30"/>
+                                <rect key="frame" x="63" y="491" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                                <color key="backgroundColor" red="0.041681021149214015" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="eventoClickLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="mKh-95-9K0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSE-uw-LEe">
-                                <rect key="frame" x="243" y="491" width="57" height="30"/>
+                                <rect key="frame" x="243" y="491" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Register"/>
+                                <color key="backgroundColor" red="1" green="0.10439151023890902" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Kwi-vB-8M8" kind="show" id="fze-0J-xj9"/>
                                 </connections>
@@ -74,11 +80,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.66666668653488159" green="0.11289724283330141" blue="0.10049250099237926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1946821702" green="0.3421532095" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.19468217023305934" green="0.34215320953444073" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="btnLogin" destination="zeY-xf-wqo" id="dpm-GC-cz9"/>
+                        <outlet property="btnRegister" destination="qSE-uw-LEe" id="Sr4-DV-bqO"/>
                         <outlet property="txtPass" destination="Duq-p8-bgO" id="ibB-bJ-HOR"/>
                         <outlet property="txtUser" destination="jN5-Ss-s9C" id="WPn-Rf-enD"/>
                         <segue destination="qY6-IB-db3" kind="show" identifier="trlogin" id="3nN-Qr-oIz"/>
@@ -86,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1415" y="-72"/>
+            <point key="canvasLocation" x="-1415.2" y="-72.413793103448285"/>
         </scene>
         <!--Register-->
         <scene sceneID="sVL-pd-aq1">
@@ -352,6 +360,6 @@
         <image name="eliminar-pis-de-gato.jpg" width="740" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZSR-m6-DJy"/>
+        <segue reference="3nN-Qr-oIz"/>
     </inferredMetricsTieBreakers>
 </document>
