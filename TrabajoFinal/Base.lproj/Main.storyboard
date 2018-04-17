@@ -102,7 +102,6 @@
                                 <state key="normal" title="Accept"/>
                                 <connections>
                                     <action selector="clickRegistar" destination="Kwi-vB-8M8" eventType="touchUpInside" id="Ayj-Xp-Oim"/>
-                                    <segue destination="qY6-IB-db3" kind="show" id="41u-8G-Y5y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W79-5Q-CTe">
@@ -174,11 +173,11 @@
                         <viewLayoutGuide key="safeArea" id="JDs-WR-acb"/>
                     </view>
                     <connections>
-                        <outlet property="btnRegister" destination="YBa-b7-0Cv" id="irW-Ma-GRV"/>
                         <outlet property="txtEmail" destination="knO-TA-c0g" id="ePO-4M-uaW"/>
                         <outlet property="txtPass" destination="tWe-Pj-2wB" id="ajC-7i-5VB"/>
                         <outlet property="txtPassConfirm" destination="gCG-Ip-MFn" id="Gn3-Hu-rCz"/>
                         <outlet property="txtUser" destination="GgV-kX-LNg" id="2JM-az-Ul9"/>
+                        <segue destination="qY6-IB-db3" kind="show" identifier="trregister" id="ZSR-m6-DJy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMQ-Uz-ReY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,6 +352,6 @@
         <image name="eliminar-pis-de-gato.jpg" width="740" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3nN-Qr-oIz"/>
+        <segue reference="ZSR-m6-DJy"/>
     </inferredMetricsTieBreakers>
 </document>

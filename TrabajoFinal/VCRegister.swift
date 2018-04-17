@@ -15,7 +15,7 @@ class VCRegister: UIViewController {
     @IBOutlet  var txtEmail:UITextField?
     @IBOutlet var txtPass:UITextField?
     @IBOutlet var txtPassConfirm:UITextField?
-    @IBOutlet var btnRegister:UIButton?
+    
     
     
     override func viewDidLoad() {
@@ -32,12 +32,18 @@ class VCRegister: UIViewController {
     //esto es de prueba y debe ser cambiado
         DataHolder.sharedInstance.miPerfil.sNombre = txtUser?.text
         DataHolder.sharedInstance.miPerfil.sEmail = txtEmail?.text
+    if self.txtPass?.text==self.txtPassConfirm?.text{
     
     Auth.auth().createUser(withEmail:(txtEmail?.text)!,password:(txtPass?.text)!){ (user, error) in
-            if user != nil{
+        if user != nil {
                 print("TE REGISTRARSE")
+            
+            self.performSegue(withIdentifier: "trregister", sender: self)
+            
                 DataHolder.sharedInstance.fireStoreDB?.collection("Perfiles").document((user?.uid)!).setData(
                     DataHolder.sharedInstance.miPerfil.getMap()
+                    
+                    
                    /*[
                      "nombre": self.txtUser?.text! as Any,
                     "email": self.txtEmail?.text as Any,
@@ -51,7 +57,13 @@ class VCRegister: UIViewController {
             }
         }
         print("Hola!!!")
+        
     }
+    else{
+        print("contraseña incorrecta")
+    }
+    }
+    
 
     /*
     // MARK: - Navigation
