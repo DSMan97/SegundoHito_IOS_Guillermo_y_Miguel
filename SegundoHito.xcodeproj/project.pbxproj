@@ -10,6 +10,7 @@
 		074E8B4C207F595700639D63 /* VCRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E8B4B207F595700639D63 /* VCRegister.swift */; };
 		079A13B5207CE1A600105B9D /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079A13B4207CE1A600105B9D /* DataHolder.swift */; };
 		07A2A5AE2088957F004BE145 /* VCMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A2A5AD2088957F004BE145 /* VCMap.swift */; };
+		07D233212088C278005336EB /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D233202088C278005336EB /* City.swift */; };
 		07F76B9F207CDBD700408656 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07F76B9E207CDBD600408656 /* GoogleService-Info.plist */; };
 		1A0EA6592076476B00AA5994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EA6582076476B00AA5994 /* AppDelegate.swift */; };
 		1A0EA65B2076476B00AA5994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0EA65A2076476B00AA5994 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		074E8B4B207F595700639D63 /* VCRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRegister.swift; sourceTree = "<group>"; };
 		079A13B4207CE1A600105B9D /* DataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		07A2A5AD2088957F004BE145 /* VCMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMap.swift; sourceTree = "<group>"; };
+		07D233202088C278005336EB /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		07F76B9E207CDBD600408656 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		08BEEADA109F6F4A8708C405 /* Pods-TrabajoFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrabajoFinal/Pods-TrabajoFinal.release.xcconfig"; sourceTree = "<group>"; };
 		0D6394120B041AE4BF5EB9BA /* Pods-TrabajoFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrabajoFinal/Pods-TrabajoFinal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				074E8B4B207F595700639D63 /* VCRegister.swift */,
 				1A8DB4F5207F86B2004603A4 /* Perfil.swift */,
 				07A2A5AD2088957F004BE145 /* VCMap.swift */,
+				07D233202088C278005336EB /* City.swift */,
 			);
 			path = TrabajoFinal;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			files = (
 				1A0EA670207671D900AA5994 /* VCColeccion.swift in Sources */,
 				1A0EA674207681FF00AA5994 /* TVCMiCelda.swift in Sources */,
+				07D233212088C278005336EB /* City.swift in Sources */,
 				1A0EA6612076476B00AA5994 /* TrabajoFinal.xcdatamodeld in Sources */,
 				079A13B5207CE1A600105B9D /* DataHolder.swift in Sources */,
 				1A0EA67220767A6900AA5994 /* VCPrincipal.swift in Sources */,
