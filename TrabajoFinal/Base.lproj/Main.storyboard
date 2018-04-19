@@ -317,7 +317,7 @@
         <!--Item 1-->
         <scene sceneID="zPv-42-7zE">
             <objects>
-                <viewController id="Ou5-nY-j58" sceneMemberID="viewController">
+                <viewController id="Ou5-nY-j58" customClass="VCMap" customModule="TrabajoFinal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ma-eT-Pwi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -331,6 +331,9 @@
                         <viewLayoutGuide key="safeArea" id="b9S-eC-GDV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="SJ9-2x-BUC"/>
+                    <connections>
+                        <outlet property="MiMapa" destination="7Rw-6I-HAC" id="FEp-7K-T1a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJf-gJ-Utv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
