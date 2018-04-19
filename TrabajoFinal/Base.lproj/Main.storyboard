@@ -58,8 +58,8 @@
                                 <rect key="frame" x="67" y="60" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKz-X4-3GB">
-                                <rect key="frame" x="122" y="196" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKz-X4-3GB">
+                                <rect key="frame" x="122" y="196" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -360,6 +360,6 @@
         <image name="eliminar-pis-de-gato.jpg" width="740" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZSR-m6-DJy"/>
+        <segue reference="3nN-Qr-oIz"/>
     </inferredMetricsTieBreakers>
 </document>
