@@ -11,33 +11,30 @@ import UIKit
 class Perfil: NSObject {
     
     let IDnombre = "nombre"
-    let IDapellidos = "apellidos"
-    let IDemail = "email"
-    let IDmayor = "mayor de edad"
+    let IDCapital = "capital"
+    let IDPais = "pais"
+    let IDescapital = "escapital"
     
     var sNombre:String?
-    var sApellidos:String?
-    var sEmail:String?
-    var bMayor:BooleanLiteralType?
+    var sCapital:String?
+    var sPais:String?
+    var bescapital:BooleanLiteralType?
     
     func setMap(valores:[String:Any]){
         sNombre = valores[IDnombre] as? String
-        sApellidos = valores[IDapellidos] as? String
-        sEmail = valores[IDemail] as? String
-        bMayor = valores[IDmayor] as? BooleanLiteralType
+        sCapital = valores[IDCapital] as? String
+        sPais = valores[IDPais] as? String
+        bescapital = valores[IDescapital] as? BooleanLiteralType
         
-        print("Nombre de tu perfil: ",sNombre)
-        print("Apellidos de tu perfil: ",sApellidos)
-        print("Email de tu perfil: ",sEmail)
-        print("Edad de tu perfil: ",bMayor)
+      
     }
     
     func getMap () -> [String:Any] {
         return[
             "nombre": sNombre as Any,
-            "apellidos": sApellidos as Any,
-            "email": sEmail as Any,
-            "mayor": bMayor as Any
+            "capital": sCapital as Any,
+            "pais": sPais as Any,
+            "escapital": bescapital as Any
         ]
     }
     

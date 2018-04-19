@@ -10,6 +10,9 @@ import UIKit
 
 class City: NSObject {
     
-    var
+    var sCapital:String?
+    var sPais:String?
+    var sNombre:String?
+    
 
 }
