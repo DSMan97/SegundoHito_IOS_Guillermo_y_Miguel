@@ -17,44 +17,31 @@ class DataHolder: NSObject {
         FirebaseApp.configure()
         fireStoreDB=Firestore.firestore()
         
-        let personasRef = fireStoreDB?.collection("cobayas")
+        let ciudadesRef = fireStoreDB?.collection("Ciudades")
         
-        personasRef?.document("Colmillo").setData([
-            "nombre": "Andres",
-            "apellido": "Crespo",
-            "email": "manco@gmail.com",
-            "Mayor de Edad": false,
+        ciudadesRef?.document("MAD").setData([
+            "nombre": "Madrid",
+            "capital": "Madrid",
+            "país": "España",
+            "escapital": true
             ])
-        personasRef?.document("Miky").setData([
-            "nombre": "Miguel Angel",
-            "apellido": "Martinez",
-            "email": "bello@gmail.com",
-            "Mayor de Edad": true,
+        ciudadesRef?.document("CAT").setData([
+            "nombre": "Catalunya",
+            "capital": "Barcelona",
+            "país": "España",
+            "escapital": false
             ])
-        personasRef?.document("Creik").setData([
-            "nombre": "Erick",
-            "apellido": "Orellana",
-            "email": "cobarde@gmail.com",
-            "Mayor de Edad": false,
+        ciudadesRef?.document("ANDA").setData([
+            "nombre": "Andalucia",
+            "capital": "Sevilla",
+            "país": "España",
+            "escapital": false
             ])
-        personasRef?.document("Xkun").setData([
-            "nombre": "Nacho",
-            "apellido": "Fernandez",
-            "email": "cafetera@gmail.com",
-            "Mayor de Edad": false,
-            ])
-        personasRef?.document("Buca").setData([
-            "nombre": "Javier",
-            "apellido": "Sanabria",
-            "email": "corealabuena@gmail.com",
-            "Mayor de Edad": true,
-            ])
-        
-        personasRef?.document("DSMan97").setData([
-            "nombre": "Guillermo",
-            "apellido": "Crespo",
-            "email": "DSman97@gmail.com",
-            "Mayor de Edad": true,
+        ciudadesRef?.document("EXTR").setData([
+            "nombre": "Extremadura",
+            "capital": "Cáceres",
+            "país": "España",
+            "escapital": false
             ])
         
     }
