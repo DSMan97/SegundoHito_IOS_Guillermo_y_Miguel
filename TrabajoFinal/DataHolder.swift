@@ -25,19 +25,19 @@ class DataHolder: NSObject {
             "país": "España",
             "escapital": true
             ])
-        ciudadesRef?.document("CAT").setData([
+        ciudadesRef?.document("BAR").setData([
             "nombre": "Catalunya",
             "capital": "Barcelona",
             "país": "España",
             "escapital": false
             ])
-        ciudadesRef?.document("ANDA").setData([
+        ciudadesRef?.document("SEV").setData([
             "nombre": "Andalucia",
             "capital": "Sevilla",
             "país": "España",
             "escapital": false
             ])
-        ciudadesRef?.document("EXTR").setData([
+        ciudadesRef?.document("CACE").setData([
             "nombre": "Extremadura",
             "capital": "Cáceres",
             "país": "España",
