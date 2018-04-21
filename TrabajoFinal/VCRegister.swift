@@ -15,10 +15,14 @@ class VCRegister: UIViewController {
     @IBOutlet  var txtEmail:UITextField?
     @IBOutlet var txtPass:UITextField?
     @IBOutlet var txtPassConfirm:UITextField?
+    @IBOutlet var btnlAceptar:UIButton?
+    @IBOutlet var btnCancelar:UIButton?
     
     
     
     override func viewDidLoad() {
+        btnlAceptar?.layer.cornerRadius = 10;
+        btnCancelar?.layer.cornerRadius = 10;
         super.viewDidLoad()
        
         // Do any additional setup after loading the view.

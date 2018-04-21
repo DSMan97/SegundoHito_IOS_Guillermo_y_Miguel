@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qY6-IB-db3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qY6-IB-db3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -107,7 +107,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBa-b7-0Cv">
                                 <rect key="frame" x="54" y="548" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Accept"/>
+                                <color key="backgroundColor" red="0.057249147048700211" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="clickRegistar" destination="Kwi-vB-8M8" eventType="touchUpInside" id="Ayj-Xp-Oim"/>
                                 </connections>
@@ -115,7 +118,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W79-5Q-CTe">
                                 <rect key="frame" x="276" y="548" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="KzY-zz-CtH"/>
                                 </connections>
@@ -181,6 +187,8 @@
                         <viewLayoutGuide key="safeArea" id="JDs-WR-acb"/>
                     </view>
                     <connections>
+                        <outlet property="btnCancelar" destination="W79-5Q-CTe" id="URJ-Bp-B2Y"/>
+                        <outlet property="btnlAceptar" destination="YBa-b7-0Cv" id="d4g-3y-bnR"/>
                         <outlet property="txtEmail" destination="knO-TA-c0g" id="ePO-4M-uaW"/>
                         <outlet property="txtPass" destination="tWe-Pj-2wB" id="ajC-7i-5VB"/>
                         <outlet property="txtPassConfirm" destination="gCG-Ip-MFn" id="Gn3-Hu-rCz"/>
@@ -363,6 +371,7 @@
         <image name="eliminar-pis-de-gato.jpg" width="740" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3nN-Qr-oIz"/>
+        <segue reference="KzY-zz-CtH"/>
+        <segue reference="ZSR-m6-DJy"/>
     </inferredMetricsTieBreakers>
 </document>

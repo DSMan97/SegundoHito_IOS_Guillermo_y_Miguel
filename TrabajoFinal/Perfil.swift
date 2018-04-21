@@ -11,20 +11,16 @@ import UIKit
 class Perfil: NSObject {
     
     let IDnombre = "nombre"
-    let IDCapital = "capital"
-    let IDPais = "pais"
-    let IDescapital = "escapital"
+    let IDEmail = "capital"
+   
     
     var sNombre:String?
-    var sCapital:String?
-    var sPais:String?
-    var bescapital:BooleanLiteralType?
+    var sEmail:String?
     
     func setMap(valores:[String:Any]){
         sNombre = valores[IDnombre] as? String
-        sCapital = valores[IDCapital] as? String
-        sPais = valores[IDPais] as? String
-        bescapital = valores[IDescapital] as? BooleanLiteralType
+        sEmail = valores[IDEmail] as? String
+        
         
       
     }
@@ -32,9 +28,8 @@ class Perfil: NSObject {
     func getMap () -> [String:Any] {
         return[
             "nombre": sNombre as Any,
-            "capital": sCapital as Any,
-            "pais": sPais as Any,
-            "escapital": bescapital as Any
+            "email": sEmail as Any,
+            
         ]
     }
     
