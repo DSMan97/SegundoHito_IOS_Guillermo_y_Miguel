@@ -21,7 +21,9 @@ class City: NSObject {
         sNombre = valores[IDnombre] as? String
         sImagen = valores[IDImagen] as? String
         
-        
+        if sImagen == nil{
+            sImagen="gs://segundo-hito-8bb55.appspot.com/perro.png"
+        }
     }
     
     func getMap () -> [String:Any] {

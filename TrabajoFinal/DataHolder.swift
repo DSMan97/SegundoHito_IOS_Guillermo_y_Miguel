@@ -8,15 +8,17 @@
 
 import UIKit
 import Firebase
+import FirebaseStorage
+
 class DataHolder: NSObject {
     static let sharedInstance:DataHolder = DataHolder()
     var fireStoreDB:Firestore?
     var miPerfil: Perfil=Perfil()
-    
+    var firStorage:Storage?
     func initFireBase(){
         FirebaseApp.configure()
         fireStoreDB=Firestore.firestore()
-        
+        firStorage=Storage.storage()
         /*
         let ciudadesRef = fireStoreDB?.collection("animales")
         

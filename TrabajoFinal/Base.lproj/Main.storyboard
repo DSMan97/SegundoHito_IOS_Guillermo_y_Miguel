@@ -240,7 +240,7 @@
                                             </subviews>
                                         </view>
                                         <connections>
-                                            <outlet property="imgagen" destination="oUQ-md-IqT" id="Obr-xD-eHa"/>
+                                            <outlet property="imagen" destination="oUQ-md-IqT" id="a5P-4L-x1A"/>
                                             <outlet property="lblNombre" destination="DgZ-XT-a9X" id="jDl-o0-Xrw"/>
                                         </connections>
                                     </collectionViewCell>
@@ -288,13 +288,6 @@
                                                     <rect key="frame" x="0.0" y="1" width="76" height="93"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiP-MT-zFF">
-                                                    <rect key="frame" x="84" y="40" width="276" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K57-0F-ntz">
                                                     <rect key="frame" x="84" y="11" width="185" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -308,7 +301,6 @@
                                             <outlet property="accessoryView" destination="fwv-N7-ABX" id="6yC-Ao-hmF"/>
                                             <outlet property="imagen" destination="UBi-Nb-639" id="7hX-4d-cDF"/>
                                             <outlet property="lblNombre" destination="K57-0F-ntz" id="D51-eO-Xvp"/>
-                                            <outlet property="lblPais" destination="YiP-MT-zFF" id="Bwy-pb-wuT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

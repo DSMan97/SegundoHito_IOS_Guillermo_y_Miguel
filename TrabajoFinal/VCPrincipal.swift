@@ -61,8 +61,7 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "micelda1") as! TVCMiCelda
         
             cell.lblNombre?.text = self.arCiudades[indexPath.row].sNombre
-            cell.lblPais?.text = self.arCiudades[indexPath.row].sCapital
-        
+            cell.mostrarImagen(uri: self.arCiudades[indexPath.row].sImagen!)
         
         /*
         if(indexPath.row==0){
