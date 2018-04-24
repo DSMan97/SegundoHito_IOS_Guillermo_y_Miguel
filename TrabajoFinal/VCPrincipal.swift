@@ -11,6 +11,8 @@ import UIKit
 class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tbMiTable:UITableView?
+    var arCiudades: [City] = NSArray() as! [City]
+    
   /*  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -24,8 +26,25 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        DataHolder.sharedInstance.fireStoreDB?.collection("Ciudades").addSnapshotListener  { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    self.arCiudades=[]
+                    for document in querySnapshot!.documents {
+                        let ciudad: City=City()
+                        ciudad.sID = document.documentID
+                        ciudad.setMap(valores: document.data())
+                        self.arCiudades.append(ciudad)
+                        print("\(document.documentID) => \(document.data())")
+                    }
+                    print("-------->",self.arCiudades.count )
+                    self.tbMiTable?.reloadData()
+                    
+                }
+            
+        }        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,12 +53,15 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.arCiudades.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "micelda1") as! TVCMiCelda
         
+            cell.lblNombre?.text = self.arCiudades[indexPath.row].sNombre
+        
+        /*
         if(indexPath.row==0){
              cell.imagen1?.image=UIImage(named: "gato.png")
             cell.lblNombre?.text="Gato"
@@ -60,6 +82,7 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
             cell.imagen1?.image=UIImage(named: "canario.png")
             cell.lblNombre?.text="Canario"
         }
+ */
         return cell
     }
   

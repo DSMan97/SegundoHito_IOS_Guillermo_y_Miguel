@@ -15,6 +15,7 @@ class City: NSObject {
     let IDPais = "pais"
     let IDescapital = "escapital"
     
+    var sID:String?
     var sNombre:String?
     var sCapital:String?
     var sPais:String?

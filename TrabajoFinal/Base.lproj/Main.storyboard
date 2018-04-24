@@ -371,7 +371,6 @@
         <image name="eliminar-pis-de-gato.jpg" width="740" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KzY-zz-CtH"/>
         <segue reference="ZSR-m6-DJy"/>
     </inferredMetricsTieBreakers>
 </document>
