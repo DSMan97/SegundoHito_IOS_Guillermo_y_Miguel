@@ -10,32 +10,24 @@ import UIKit
 
 class City: NSObject {
     
-    let IDnombre = "nombre"
-    let IDCapital = "capital"
-    let IDPais = "pais"
-    let IDescapital = "escapital"
+    let IDnombre = "Nombre"
+    let IDImagen = "Imagen"
     
     var sID:String?
     var sNombre:String?
-    var sCapital:String?
-    var sPais:String?
-    var bescapital:BooleanLiteralType?
+    var sImagen:String?
     
     func setMap(valores:[String:Any]){
         sNombre = valores[IDnombre] as? String
-        sCapital = valores[IDCapital] as? String
-        sPais = valores[IDPais] as? String
-        bescapital = valores[IDescapital] as? BooleanLiteralType
+        sImagen = valores[IDImagen] as? String
         
         
     }
     
     func getMap () -> [String:Any] {
         return[
-            "nombre": sNombre as Any,
-            "capital": sCapital as Any,
-            "pais": sPais as Any,
-            "escapital": bescapital as Any
+            "Nombre": sNombre as Any,
+            "Imagen":sImagen as Any
         ]
     }
     

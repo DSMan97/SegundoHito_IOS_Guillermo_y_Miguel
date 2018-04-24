@@ -11,7 +11,8 @@ import UIKit
 class TVCMiCelda: UITableViewCell {
 
     @IBOutlet var lblNombre:UILabel?
-    @IBOutlet var imagen1:UIImageView?
+    @IBOutlet var lblPais:UILabel?
+    @IBOutlet var imagen:UIImageView?
     
     override func awakeFromNib() {
         super.awakeFromNib()

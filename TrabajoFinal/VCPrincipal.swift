@@ -27,7 +27,7 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DataHolder.sharedInstance.fireStoreDB?.collection("Ciudades").addSnapshotListener  { (querySnapshot, err) in
+        DataHolder.sharedInstance.fireStoreDB?.collection("animales").addSnapshotListener  { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")
                 } else {
@@ -40,7 +40,8 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
                         print("\(document.documentID) => \(document.data())")
                     }
                     print("-------->",self.arCiudades.count )
-                    self.tbMiTable?.reloadData()
+                    //self.tbMiTable?.reloadData()
+                    self.refreshUI()
                     
                 }
             
@@ -60,6 +61,8 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let cell:TVCMiCelda = tableView.dequeueReusableCell(withIdentifier: "micelda1") as! TVCMiCelda
         
             cell.lblNombre?.text = self.arCiudades[indexPath.row].sNombre
+            cell.lblPais?.text = self.arCiudades[indexPath.row].sCapital
+        
         
         /*
         if(indexPath.row==0){
@@ -84,6 +87,12 @@ class VCPrincipal: UIViewController, UITableViewDelegate, UITableViewDataSource 
         }
  */
         return cell
+    }
+    
+    func refreshUI() {
+        DispatchQueue.main.async(execute:  {
+            self.tbMiTable?.reloadData()
+        })
     }
   
 

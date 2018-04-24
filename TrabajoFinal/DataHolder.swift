@@ -17,7 +17,8 @@ class DataHolder: NSObject {
         FirebaseApp.configure()
         fireStoreDB=Firestore.firestore()
         
-        let ciudadesRef = fireStoreDB?.collection("Ciudades")
+        /*
+        let ciudadesRef = fireStoreDB?.collection("animales")
         
         ciudadesRef?.document("MAD").setData([
             "nombre": "Madrid",
@@ -43,7 +44,7 @@ class DataHolder: NSObject {
             "país": "España",
             "escapital": false
             ])
-        
+        */
     }
     
 }
