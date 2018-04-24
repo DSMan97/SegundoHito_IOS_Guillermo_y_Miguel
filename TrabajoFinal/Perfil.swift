@@ -11,7 +11,7 @@ import UIKit
 class Perfil: NSObject {
     
     let IDnombre = "nombre"
-    let IDEmail = "capital"
+    let IDEmail = "email"
    
     
     var sNombre:String?
